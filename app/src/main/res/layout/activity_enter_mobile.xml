@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/option"
+    tools:context="com.mars.residentshield.Activity.EnterMobile">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:hint="Enter Phone"
+        android:gravity="center"
+        android:singleLine="true"
+        android:id="@+id/enterphone"
+        android:background="@drawable/custom_border"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:focusable="false"
+        android:hint="Select Place"
+        android:layout_below="@id/enterphone"
+        android:gravity="center"
+        android:singleLine="true"
+        android:id="@+id/selectplace"
+        android:background="@drawable/custom_border"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/selectplace"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"/>
+</RelativeLayout>
